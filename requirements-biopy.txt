@@ -1,0 +1,7 @@
+scanpy
+gseapy
+scvelo
+velocyto
+htseq
+multiqc
+magic-impute
