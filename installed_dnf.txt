@@ -1,0 +1,21 @@
+cargo
+cmake
+htop
+fira-code-fonts
+ffmpeg-free
+julia
+kate
+kvantum
+mangohud
+neovim
+neofetch
+openblas
+qbittorrent
+R
+steam
+texlive-scheme-medium
+v4l2loopback
+zsh
+
+"Development Tools"
+"Development Libraries"
