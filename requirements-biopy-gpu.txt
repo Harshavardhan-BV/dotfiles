@@ -1,0 +1,4 @@
+-r requirements-biopy.txt
+-r requirements-gpu.txt
+scvi-tools
+rapids-singlecell[rapids12] --extra-index-url=https://pypi.nvidia.com

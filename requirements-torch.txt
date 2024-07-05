@@ -1,6 +1,0 @@
-torch
-torchvision
-torchaudio
-transformers
-safetensors
---index-url https://download.pytorch.org/whl/rocm5.4.2
