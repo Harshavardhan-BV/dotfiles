@@ -49,6 +49,8 @@ cp -r .local/share/konsole $HOME/.local/share/konsole
 Select "New Profile" in Konsole Settings
 
 ## Neovim
-TBD
-
+NvChad
+```bash
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+```
 

@@ -1,9 +1,0 @@
-numpy
-pandas
-openpyxl
-matplotlib
-seaborn
-scipy
-fastcluster
-scikit-learn
-networkx

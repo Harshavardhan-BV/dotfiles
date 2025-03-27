@@ -1,6 +1,0 @@
-torch
-torchvision
-torchaudio
-jax[cuda12]
-transformers
-safetensors

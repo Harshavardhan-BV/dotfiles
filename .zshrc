@@ -106,7 +106,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias mypy="source ~/pyenv/base/bin/activate"
 alias vim='nvim'
 alias vi='nvim'
 alias vimdiff='nvim -d'
@@ -116,3 +115,39 @@ export VISUAL='nvim'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Python venv
+VENV_DIR=$HOME/pyenv
+function venv() {
+    if [ -z "$1" ]; then
+        echo "Usage: venv <name>"
+        return 1
+    fi
+    if [ -d "$VENV_DIR/$1" ]; then
+        # If venv exists, activate it
+            source $VENV_DIR/$1/bin/activate
+            return 0
+    else
+        # If venv does not exist, create it
+        echo "venv $1 does not exist. Create (y/n)"
+        read create
+        if [ "$create" = "y" ]; then
+            python3 -m venv $VENV_DIR/$1
+            source $VENV_DIR/$1/bin/activate
+            return 0
+        else
+            return 1
+        fi
+    fi
+
+}
+# Activate DEFAULT_PYENV environment
+DEFAULT_PYENV=
+if [ ! -z "$DEFAULT_PYENV" ]; then
+    venv $DEFAULT_PYENV
+fi
+
+# Enable atuin, disables uparrow
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh --disable-up-arrow)"

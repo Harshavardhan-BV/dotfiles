@@ -1,0 +1,18 @@
+[project]
+name = "biopy"
+requires-python = ">=3.12"
+dependencies = [
+    "scanpy[leiden] (>=1.11.0,<2.0.0)",
+    "fastcluster (>=1.2.6,<2.0.0)",
+    "openpyxl (>=3.1.5,<4.0.0)",
+    "ipykernel (>=6.29.5,<7.0.0)",
+    "scvelo (>=0.3.3,<0.4.0)",
+    "gseapy (>=1.1.7,<2.0.0)",
+    "magic-impute (>=3.0.0,<4.0.0)",
+    "muon (>=0.1.7,<0.2.0)",
+    "pydeseq2 (>=0.5.0,<0.6.0)",
+    "pyscenic (>=0.12.1,<0.13.0)",
+]
+
+[tool.poetry]
+package-mode = false

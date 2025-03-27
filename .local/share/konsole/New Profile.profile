@@ -1,6 +1,6 @@
 [Appearance]
 ColorScheme=MonokaiKonsole
-Font=Fira Code,11,-1,5,50,0,0,0,0,0
+Font=FiraCode Nerd Font,11,-1,5,50,0,0,0,0,0
 
 [General]
 Name=New Profile
