@@ -10,6 +10,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # Install zsh-syntax-highlighting plugin to oh-my-zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+# Install atuin
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+
 # Copy zsh and p10k configs to location 
 cp ../.zshrc $HOME/.zshrc
 cp ../.p10k.zsh $HOME/.p10k.zsh

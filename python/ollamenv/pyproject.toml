@@ -1,0 +1,13 @@
+[project]
+name = "ollamenv"
+requires-python = ">=3.12,<4.0"
+dependencies = [
+    "pandas (>=2.2.3,<3.0.0)",
+    "openpyxl (>=3.1.5,<4.0.0)",
+    "ipykernel (>=6.29.5,<7.0.0)",
+    "ollama (>=0.4.7,<0.5.0)"
+]
+
+[tool.poetry]
+package-mode = false
+

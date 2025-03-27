@@ -117,7 +117,7 @@ export VISUAL='nvim'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Python venv
-VENV_DIR=$HOME/pyenv
+VENV_DIR=$HOME/venv
 function venv() {
     if [ -z "$1" ]; then
         echo "Usage: venv <name>"

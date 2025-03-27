@@ -1,0 +1,13 @@
+[project]
+name = "lienv"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "scanpy[leiden] (>=1.11.0,<2.0.0)",
+    "fastcluster (>=1.2.6,<2.0.0)",
+    "openpyxl (>=3.1.5,<4.0.0)",
+    "ipykernel (>=6.29.5,<7.0.0)",
+    "liana[common] (>=1.5.1,<2.0.0)",
+]
+
+[tool.poetry]
+package-mode = false
